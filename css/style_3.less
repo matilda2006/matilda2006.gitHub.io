@@ -1,0 +1,227 @@
+/*!rules for navbar.!*/
+.cap {
+  background-color: #d40201;
+  color: #ffffff;
+}
+/*!ending rules for navbar.!*/
+
+/*!rules for h1 h2.!*/
+.text-header {
+  color: #edeef0;
+  font-weight: bold;
+  font-size: 5vw;
+  font-family: "Times New Roman", monospace;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#9c947b)";/*IE 8*/
+  text-shadow: 1px 1px 2px #9c947b;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#9c947b); /*IE 5.5-7*/
+}
+/*!ending rules for h1 h2.!*/
+
+/*!rules for section not_major.!*/
+.section-not {
+  padding-top: 1%;
+  padding-bottom: 6.5%;
+}
+/*!ending rules for section not_major.!*/
+
+/*!rules for transition.!*/
+.trans {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition:all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+/*!ending rules for transition.!*/
+h3 {
+  margin-top: 0;
+  margin-left: 1.5%;
+  margin-bottom: 2%;
+  color: #0705b0;
+  font-weight: bold;
+  font-family: "Times New Roman", monospace;
+  font-size: 4vw;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#02027f)";/*IE 8*/
+  text-shadow: 1px 1px 2px #02027f;/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color=#02027f); /*IE 5.5-7*/
+}
+
+p {
+  text-align: justify;
+  color: #000000;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  text-align: justify;
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+a:hover {
+  color: #d40201;
+  text-decoration: none;
+  .trans;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 5%;
+}
+
+/*!navbar.!*/
+.navbar-static-top {
+  border: 0;
+}
+
+.navbar-default {
+  .navbar-toggle,.navbar-toggle:visited {
+    border-color: #d40201;
+    background-color: #d40201;
+  }
+  .navbar-toggle:hover {
+    border-color: #0705b0;
+    background-color: #0705b0;
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+  .navbar-brand {
+    padding-top: 5px;
+  }
+  .nav {
+    margin-top: 18px;
+  }
+  .navbar-right {
+    .active {
+      border-radius: 4px;
+      a {
+        .cap;
+      }
+      a:visited {
+        background-color: #d40201;
+      }
+    }
+    li {
+      a {
+        color: #d40201;
+      }
+      a:hover {
+        .cap;
+        .trans;
+      }
+      a:visited {
+        background-color: #d40201;
+      }
+    }
+  }
+}
+/*!ending navbar.!*/
+
+/*!header.!*/
+.header {
+  background-image: url("../images/fon_3.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;  
+  .name {
+    h1 {
+      margin-top: 35%;
+      margin-bottom: 35.8%;
+      .text-header;
+    }
+  }
+  .name_2 {
+    h2 {
+      margin-top: 60%;
+      text-align: right;
+      .text-header;
+    }
+  }
+}
+/*!ending header.!*/
+
+/*!article.!*/
+.major {
+  padding-top: 5%;
+  padding-bottom: 2.5%;
+  background-color: #edeef0;
+}
+
+.panel-default {
+  .panel-heading {
+    background-color: #d40201;
+    a {
+    text-decoration: none;
+    text-align: justify;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Times New Roman", monospace;
+    font-size: 2vw;
+    }
+  }
+  .panel-heading:hover {
+    background-color: #ffffff;
+    .trans;
+    a:hover {
+      color: #d40201;
+      text-decoration: none;
+      .trans;
+    }
+  }
+}
+
+.time {
+  color: #d40201;
+  font-weight: bold;
+}
+/*!ending article.!*/
+
+/*!fuuter.!*/
+footer {
+  background-color: #f8f8f8;
+  .socium,.copyright {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    .fav {
+      display: inline;
+      .fa {
+        color: #d40201;
+      }
+      .fa:hover {
+        color: #0705b0;
+        .trans;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) { 
+  .navbar-brand {
+    width: 80%;
+    height: auto;
+  }
+  
+  h3,h4,h5 {
+    font-size: 6vw;
+  }
+  .panel-default {
+    .panel-heading {
+      a {
+      font-size: 5vw;
+      }
+    }
+  }
+
+  footer {
+    p {
+      font-size: 2.8vw;
+    }
+  }
+}
+
